@@ -17,7 +17,6 @@ timestamp = str(time.time()).split('.')[0]
 hashstring =  merchant +timestamp
 
 signature = hmac.new(secretKey.encode('utf-8'), hashstring.encode('utf-8'), hashlib.sha256).hexdigest()
-# https://secure.payu.com.tr/order/token/v2/merchantToken/'+Token+"?merchant="+Merchant+"&timestamp="+TimeStamp+"&signature="+Signature+"&cancelReason="+cancelReason
 url = 'https://secure.payu.com.tr/order/token/v2/merchantToken/'+ token +'?merchant='+ merchant +'&timestamp='+ timestamp +'&signature='+signature
 print(url)
 
