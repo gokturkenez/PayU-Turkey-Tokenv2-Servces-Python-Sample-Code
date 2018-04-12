@@ -2,7 +2,6 @@
 Project: PayU Turkey Token v2 Services - Get Token Information  Python3 Sample Code
 Author: Göktürk Enez
 '''
-# Importing required libraries.
 import hmac
 import hashlib
 from urllib.request import Request, urlopen
