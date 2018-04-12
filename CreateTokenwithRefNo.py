@@ -2,7 +2,6 @@
 Project: PayU Turkey Token v2 Services - Create Token with Ref No Python3 Sample Code
 Author: Göktürk Enez
 '''
-from datetime import datetime
 import hmac
 import hashlib
 from urllib.parse import urlencode
